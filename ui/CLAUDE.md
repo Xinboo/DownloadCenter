@@ -19,7 +19,7 @@ ECU 控制器下载中心前端。管理员上传产品配套软件/说明书，
 
 ```
 src/
-├── main.ts              — 应用入口（Pinia / router / 全局图标注册 / reset.css）
+├── main.ts              — 应用入口（Pinia / router / 全局图标注册 / ElMessage+ElMessageBox样式 / reset.css）
 ├── App.vue              — 根组件，el-config-provider(中文语言包) 包裹 <RouterView />
 ├── router/
 │   ├── index.ts         — 路由表 + 引入守卫

@@ -253,8 +253,10 @@ ECU 控制器下载中心，管理员上传产品配套软件和说明书，用�
 - 方案：后端 Kestrel 直接托管前端静态文件（UseDefaultFiles + UseStaticFiles + MapFallbackToFile）
 - 一个 Docker 镜像包含前后端，一个进程，不需要 Nginx
 - Dockerfile 多阶段构建：Node 编译前端 → .NET SDK 编译后端 → 运行时镜像
-- docker-compose.yml 映射 appsettings.json + uploads 持久化
+- docker-compose.yml 映射 appsettings.json + uploads 持久化 + favicon.ico 可选替换
+- 容器名 download-center，镜像名 xinboo/download-center
 - 已创建文件：Dockerfile、.dockerignore、docker-compose.yml
+- 已发布到 Docker Hub：xinboo/download-center
 
 ## 数据库迁移历史
 
