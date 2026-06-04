@@ -1,8 +1,10 @@
 services:
   app:
+    container_name: download-center
+    image: xinboo/download-center
     build: .
     ports:
-      - "80:8080"
+      - "8081:8080"
     volumes:
       - ./appsettings.json:/app/appsettings.json
       - ./uploads:/app/uploads
