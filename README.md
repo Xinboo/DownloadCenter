@@ -91,7 +91,7 @@ cd src/DownloadCenter.Api
 dotnet run
 ```
 
-后端默认运行在 `http://localhost:5157`
+后端默认运行在 `http://localhost:5000`
 
 ### 前端
 
