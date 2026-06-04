@@ -6,5 +6,6 @@ services:
     volumes:
       - ./appsettings.json:/app/appsettings.json
       - ./uploads:/app/uploads
+      - ./favicon.ico:/app/wwwroot/favicon.ico
     environment:
       - ASPNETCORE_ENVIRONMENT=Production

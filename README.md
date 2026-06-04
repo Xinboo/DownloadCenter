@@ -45,7 +45,7 @@ ECU 控制器下载中心，管理员上传产品配套软件和说明书，用�
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/your-username/DownloadCenter.git
+git clone git@github.com:your-username/DownloadCenter.git
 cd DownloadCenter
 ```
 
