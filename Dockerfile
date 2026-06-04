@@ -15,8 +15,10 @@ COPY src/DownloadCenter.Application/DownloadCenter.Application.csproj src/Downlo
 COPY src/DownloadCenter.Domain/DownloadCenter.Domain.csproj src/DownloadCenter.Domain/
 COPY src/DownloadCenter.Infrastructure/DownloadCenter.Infrastructure.csproj src/DownloadCenter.Infrastructure/
 COPY src/DownloadCenter.Shared/DownloadCenter.Shared.csproj src/DownloadCenter.Shared/
+COPY test/DownloadCenter.UnitTests/DownloadCenter.UnitTests.csproj test/DownloadCenter.UnitTests/
 RUN dotnet restore
 COPY src/ src/
+COPY test/ test/
 RUN dotnet publish src/DownloadCenter.Api/DownloadCenter.Api.csproj -c Release -o /app/publish --no-restore
 
 # Copy frontend dist to wwwroot
