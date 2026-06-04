@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - "80:8080"
+    volumes:
+      - ./appsettings.json:/app/appsettings.json
+      - ./uploads:/app/uploads
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
